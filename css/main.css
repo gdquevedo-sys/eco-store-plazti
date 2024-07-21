@@ -6,6 +6,9 @@ body {
 }
 
 nav {
+  background-color: #FFDAC6;
+  height: auto;
+  color: white;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -209,7 +212,7 @@ section .furniture .product-card {
 }
 
 footer {
-  background-color: #FA9500;
+  background-color: #303f54;
   width: 100%;
   height: auto;
   padding: 40px;

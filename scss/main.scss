@@ -3,6 +3,8 @@ $secondary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
 $primary-text-color: #7C6A0A;
 $quaternary-color: #FA9500;
+$nav-kalea-color: #efefef;
+$footer-kalea-color: #303f54;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5em;
 
@@ -10,7 +12,7 @@ $paragraph-size: 1.5em;
     display: flex;
     flex-direction: $direction;
     justify-content: $content;
-    align-items: $align;
+    align-items: $align;    
 }
 
 @mixin buttonStyle{
@@ -27,7 +29,10 @@ body{
     font-family: $font-stack;
 }
 
-nav{    
+nav{   
+    background-color: $secondary-color;    
+    height: auto;
+    color: white; 
     width: auto;
     @include flexCenter(row, space-between, center);
     color: $primary-text-color;
@@ -200,9 +205,9 @@ section{
         padding-bottom: 60px;
         padding-top: 60px;
     }
-    .map{
-        @include flexCenter(row, center, center);
-        padding-bottom: 50px;
+    .map{        
+        @include flexCenter(row, center, center);        
+        padding-bottom: 50px;        
     }
     h3,p{
         font-size: $paragraph-size;
@@ -210,7 +215,7 @@ section{
 }
 
 footer{
-    background-color: $quaternary-color;
+    background-color: $footer-kalea-color;
     width: 100%;
     height: auto;
     padding: 40px;
